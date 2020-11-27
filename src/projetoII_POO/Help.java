@@ -36,27 +36,27 @@ public class Help extends JFrame {
 	 * Create the frame.
 	 */
 	public Help() {
+		setTitle("Ajuda ICONVERT");
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-		setBounds(100, 100, 636, 401);
+		setBounds(100, 100, 526, 237);
 		contentPane = new JPanel();
-		contentPane.setBackground(new Color(0, 128, 0));
+		contentPane.setBackground(new Color(34, 139, 34));
 		contentPane.setBorder(new EmptyBorder(5, 5, 5, 5));
 		setContentPane(contentPane);
 		contentPane.setLayout(null);
 		
 		JLabel lblNewLabel = new JLabel("");
 		lblNewLabel.setIcon(new ImageIcon(Help.class.getResource("/img/unicamp (2).png")));
-		lblNewLabel.setBounds(53, 58, 131, 112);
+		lblNewLabel.setBounds(41, 26, 131, 112);
 		contentPane.add(lblNewLabel);
 		
 		JTextArea txtrEsseProgramaFoi = new JTextArea();
+		txtrEsseProgramaFoi.setWrapStyleWord(true);
+		txtrEsseProgramaFoi.setLineWrap(true);
+		txtrEsseProgramaFoi.setEditable(false);
+		txtrEsseProgramaFoi.setColumns(5);
 		txtrEsseProgramaFoi.setText("Esse programa foi feito com o objetivo de colocar em pr\u00E1tica os conhecimentos adquiridos em Programa\u00E7\u00E3o Orientada a Objetos II.");
-		txtrEsseProgramaFoi.setBounds(356, 92, 139, 112);
+		txtrEsseProgramaFoi.setBounds(210, 26, 255, 112);
 		contentPane.add(txtrEsseProgramaFoi);
-		
-		JScrollPane scrollPane = new JScrollPane();
-		scrollPane.setToolTipText("Esse programa foi feito com o objetivo de colocar em pr\u00E1tica os conhecimentos adquiridos em Programa\u00E7\u00E3o Orientada a Objetos II.");
-		scrollPane.setBounds(163, 190, 139, 112);
-		contentPane.add(scrollPane);
 	}
 }
